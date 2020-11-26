@@ -1,6 +1,8 @@
 const {Client}=require('discord.js')
 const {play,stop} =require('./commands')
 const bot=new Client();
+
+
 bot.login(process.env.token)
 bot.on('ready',()=>{
    
