@@ -3,7 +3,7 @@ const {play,stop} =require('./commands')
 const bot=new Client();
 
 
-bot.login(process.env.token)
+bot.login("NzgwNzc4ODMyODM5MzExMzgw.X70C8w.wzcyz_pvdPyeaEOxTwwuRjeooqI")
 bot.on('ready',()=>{
    
     console.log("BOT IS UP AND RUNNING")})
