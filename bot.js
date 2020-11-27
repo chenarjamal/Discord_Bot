@@ -1,5 +1,5 @@
 const {Client}=require('discord.js')
-const {play,stop} =require('./commands')
+const {play,stop,getJoke} =require('./commands')
 const bot=new Client();
 
 
@@ -21,7 +21,9 @@ if(commandName==='podu'){
   if(commandName==='kelambu'){
     return stop(msg,args)
   }
-
+if(commandName=="joke"){
+  return getJoke
+}
 
 })
 

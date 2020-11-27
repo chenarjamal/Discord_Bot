@@ -29,7 +29,30 @@ async function stop(msg){
 
     await msg.reply("Stopped!")
 }
+function getJoke() {
+    // make an API request to https://icanhazdadjoke.com/'
+    fetch('https://icanhazdadjoke.com/', {
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(function(response) {
+      
+      return response.json();
+    }).then(function(data) {
+ 
+      const joke = data.joke;
+     
+       msg.reply(joke)
 
+
+    }).catch(function(error) {
+
+  
+      console.log(error);
+    });
+  }
 
 module.exports.play=play
 module.exports.stop=stop
+module.exports.getJoke=getJoke
+
