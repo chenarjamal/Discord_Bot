@@ -22,7 +22,7 @@ if(commandName==='podu'){
     return stop(msg,args)
   }
 if(commandName=="joke"){
-  return getJoke
+  return getJoke()
 }
 
 })

@@ -42,8 +42,8 @@ function getJoke() {
  
       const joke = data.joke;
      
-       msg.reply(joke)
-
+       msg.reply("JOKE! HA HA HA")
+       console.log(joke);
 
     }).catch(function(error) {
 
