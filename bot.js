@@ -15,7 +15,7 @@ bot.on('message',(msg)=>{
 const commandName=getCommandName(prefix,msg.content)
 const args=getCommandArgs(prefix,msg.content)
 
-if(commandName==='podu'){
+if(commandName==='padu'){
     return play(msg,args)}
 
   if(commandName==='kelambu'){
