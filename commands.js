@@ -1,7 +1,7 @@
 const { search } = require('ffmpeg-static')
 const downloadYT=require('ytdl-core')
 const searchYT=require('yt-search')
-
+const fetch = require("node-fetch");
 async function play(msg,...args){
 const vc=msg.member.voice.channel
 
@@ -29,30 +29,9 @@ async function stop(msg){
 
     await msg.reply("Stopped!")
 }
-function getJoke() {
-    // make an API request to https://icanhazdadjoke.com/'
-    fetch('https://icanhazdadjoke.com/', {
-      headers: {
-        'Accept': 'application/json'
-      }
-    }).then(function(response) {
-      
-      return response.json();
-    }).then(function(data) {
- 
-      const joke = data.joke;
-     
-       msg.reply("JOKE! HA HA HA")
-       console.log(joke);
 
-    }).catch(function(error) {
-
-  
-      console.log(error);
-    });
-  }
 
 module.exports.play=play
 module.exports.stop=stop
-module.exports.getJoke=getJoke
+
 
