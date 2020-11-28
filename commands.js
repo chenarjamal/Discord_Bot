@@ -29,7 +29,7 @@ async function stop(msg){
 
     await msg.reply("Stopped!")
 }
-function getJoke() {
+async function getJoke() {
    
     fetch('https://icanhazdadjoke.com/', {
       headers: {
