@@ -1,5 +1,6 @@
 const {Client}=require('discord.js')
 const {play,stop,getJoke} =require('./commands')
+
 const bot=new Client();
 
 
@@ -22,7 +23,7 @@ if(commandName==='podu'){
     return stop(msg,args)
   }
 if(commandName=="joke"){
-  return getJoke()
+ msg.reply("JOKE UH!!")
 }
 
 })

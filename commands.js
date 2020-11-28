@@ -1,7 +1,7 @@
 const { search } = require('ffmpeg-static')
 const downloadYT=require('ytdl-core')
 const searchYT=require('yt-search')
-
+const fetch = require("node-fetch");
 async function play(msg,...args){
 const vc=msg.member.voice.channel
 
