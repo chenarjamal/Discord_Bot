@@ -7,7 +7,8 @@ const bot=new Client();
 bot.login("NzgwNzc4ODMyODM5MzExMzgw.X70C8w.wzcyz_pvdPyeaEOxTwwuRjeooqI")
 bot.on('ready',()=>{
    
-    console.log("BOT IS UP AND RUNNING")})
+       
+  console.log("BOT IS UP AND RUNNING..")})
 
 bot.on('message',(msg)=>{
     if(msg.author.bot)return
